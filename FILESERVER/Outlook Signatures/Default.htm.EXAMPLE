@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<p>
+	<span style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:#538135;'><em>#fullName<br /></em></span>
+	<span style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:#538135;'><strong>#jobTitle<br /></strong></span>
+	<span style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:#538135;'>#phones</span> <!-- Available variables: #mobile #telephone #email-->
+</p>
