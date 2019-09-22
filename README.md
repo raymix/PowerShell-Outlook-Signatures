@@ -17,7 +17,13 @@ I have made a comment to help someone out on r/PowerShell by sharing this script
 ### Do I need to edit anything in this script?
 Yes, the script was originally tailored to my company AD structure, it was not designed to fit anyone else, the changes required are however minor and will require some testing on your part before it should go in production.
 
-### How does it work?
+### How do templates work?
+It's fairly simple - check out **variables readme.txt** inside DATA folder, you can add these available #variables to your HTML code and they will be converted into information pulled down from AD. The design of your signature from this point on is only limited by your knowledge of HTML and CSS.
+
+### Can I add more variables to templates?
+Yes  you can, but this will require some knowledge of PowerShell. You will need to modify script for $lastline to allow script to detect changes in custom vars and update Write-Signature function's replace methods (e.g -replace "#customVariable",$customVariable)
+
+### How does script work?
 [![](https://i.imgur.com/Dr2DV0V.png)](https://i.imgur.com/Dr2DV0V.png)
 1. Script defines all required paths and if Signatures folder does not exist locally, it will create one
 2. Script then connects to ActiveDirectory to pull down basic information of current user. Since user owns their own AD object, no additional permissions are required
