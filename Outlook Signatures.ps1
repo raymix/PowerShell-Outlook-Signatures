@@ -79,6 +79,7 @@ function Send-Notification($title, $msg) {
     $balloon.BalloonTipTitle = $title 
     $balloon.Visible = $true 
     $balloon.ShowBalloonTip(10000)
+    $balloon.Dispose()
 }
 
 function Write-Signature($md5, $template) {
